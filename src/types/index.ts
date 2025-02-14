@@ -6,6 +6,7 @@ export interface Webhook {
 }
 
 export interface Resource {
+  username: string;
   id: string;
   title: string;
   description?: string;
@@ -14,6 +15,7 @@ export interface Resource {
   fileUrl?: string;
   createdAt: string;
   webhookId: string;
+  webhookUrl: string;
 }
 
 export interface MessageTemplate {
