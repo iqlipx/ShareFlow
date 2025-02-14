@@ -88,3 +88,7 @@ The application should now be running at http://localhost:5173.
 ### 🔗 Webhook Management
 ![Webhook Management](/images/webhook.png)
 
+
+### 💾 Client-Side Storage
+All the data and configurations in ShareFlow, including webhooks and shared resources, are stored **locally in your browser's storage**. This means no external database is used, and everything is saved directly on your device for privacy and ease of use.
+
