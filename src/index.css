@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-900;
+}
+
+/* Professional Blue Gradient Text */
+.gradient-text {
+  @apply bg-gradient-to-r bg-clip-text text-transparent;
+  background-image: linear-gradient(to right, #1e3c72, #2a5298);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-900;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to right, #16325c, #203a67);
+}
+
+/* Form styles */
+input[type="date"],
+input[type="time"] {
+  @apply appearance-none;
+  color-scheme: dark;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  @apply filter invert opacity-50 hover:opacity-75 cursor-pointer;
+}
+
+/* Transitions */
+.custom-transition {
+  @apply transition-all duration-200 ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+/* Card hover effects */
+.hover-card {
+  @apply transition-transform duration-200;
+}
+
+.hover-card:hover {
+  @apply transform -translate-y-1;
+}
+
+/* React Datepicker custom styling for professional blue */
+.react-datepicker__header {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  border-bottom: none;
+}
+
+.react-datepicker__current-month,
+.react-datepicker-time__header {
+  color: white;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: white;
+}
+
+.react-datepicker__day:hover {
+  background: linear-gradient(to right, #16325c, #203a67);
+  color: white;
+}
+
+/* Optional: Time picker container background for consistency */
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box {
+  background: #1f2937;
+}
