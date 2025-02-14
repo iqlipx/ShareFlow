@@ -22,6 +22,7 @@ export async function sendResource(resource: Resource): Promise<void> {
   };
 
   const payload = {
+    username: resource.username,
     embeds: [embed],
     ...(resource.fileUrl && { files: [{ attachment: resource.fileUrl }] }),
   };

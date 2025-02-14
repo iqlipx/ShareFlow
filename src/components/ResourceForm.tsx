@@ -8,6 +8,7 @@ export function ResourceForm({ onSubmit }: {
   onSubmit: (resource: Omit<Resource, 'id' | 'createdAt'>) => Promise<void>;
 }) {
   const [formData, setFormData] = useState({
+    username: '',
     title: '',
     description: '',
     url: '',
@@ -43,7 +44,7 @@ export function ResourceForm({ onSubmit }: {
       });
       // Remove duplicate toast here (make sure only one toast is triggered)
       // toast.success('Resource shared successfully!');
-      setFormData({ title: '', description: '', url: '', tags: [] });
+      setFormData({ username: '', title: '', description: '', url: '', tags: [] });
       setTagInput('');
     } catch (error) {
       console.error('Submission failed:', error);
@@ -109,6 +110,20 @@ export function ResourceForm({ onSubmit }: {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Left Column: Editing Form */}
         <div className="space-y-6">
+        <div>
+            <label className="block text-sm font-medium text-blue-400 mb-2">
+              Bot Name
+            </label>
+            <input
+              type="text"
+              value={formData.username}
+              onChange={(e) =>
+                setFormData((prev) => ({ ...prev, username: e.target.value }))
+              }
+              className="w-full h-12 rounded-lg bg-gray-900 border border-gray-700 text-white text-lg px-4 py-3 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition-colors"
+              placeholder="Enter Bot Name"
+            />
+          </div>
           <div>
             <label className="block text-sm font-medium text-blue-400 mb-2">
               Title
