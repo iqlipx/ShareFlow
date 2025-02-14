@@ -88,7 +88,34 @@ The application should now be running at http://localhost:5173.
 ### 🔗 Webhook Management
 ![Webhook Management](/images/webhook.png)
 
+### 👀 How it look
+![Result](/images/result.png)
+
 
 ### 💾 Client-Side Storage
 All the data and configurations in ShareFlow, including webhooks and shared resources, are stored **locally in your browser's storage**. This means no external database is used, and everything is saved directly on your device for privacy and ease of use.
+
+
+## 🤝 Contribution Guidelines
+
+We welcome contributions to ShareFlow! If you’d like to help improve the project, feel free to submit issues or pull requests. Please adhere to the following guidelines:
+
+- Ensure your changes align with the ethical use of this tool.
+- Follow the project's code of conduct, which promotes a respectful and collaborative environment.
+- Thoroughly test your changes before submitting a pull request.
+  
+By contributing, you help make ShareFlow better for everyone. Thank you for your support!
+
+
+## ⚠️ Disclaimer / Notice
+
+**Important:**
+
+- ShareFlow is intended to be used **ethically and responsibly**.
+- This tool is designed for **resource sharing** and **message sending** via Discord webhooks in a secure and private manner.
+- **Do not use this tool for any malicious activities**, such as trolling, phishing, or spamming individuals or communities. Misuse of this tool can lead to severe consequences and is strictly against Discord's Terms of Service.
+- By using ShareFlow, you agree to comply with all applicable laws and Discord's Community Guidelines.
+
+**Please use responsibly!**
+
 
